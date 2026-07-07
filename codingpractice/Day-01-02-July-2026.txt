@@ -1,0 +1,26 @@
+
+
+- name: Install Nginx on ◙Ptahnex server
+  hosts: all
+  become: yes
+
+  task:
+    -name: Install Nginx
+     yum:
+       name: nginx
+       state: present
+
+
+
+#DOCKER INSTALLATION @ FIRST CONTAINER
+docker --version
+docker run ubantu echo "HELLO PATHNEX"
+
+
+
+
+#DOCKER FILE
+FROM ubantu:22.04
+CMD ["echo", "HELLO PATHNEX"]
+
+
